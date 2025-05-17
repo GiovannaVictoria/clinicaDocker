@@ -21,16 +21,16 @@ Essa aplicação foi desenvolvida para a disciplina de Desenvolvimento de Softwa
 ```
 
 - O arquivo ```docker-compose.yml``` contém a orquestração dos contâineres da aplicação;
-- A pasta ```images``` contém as imagens desse README;
+- A pasta ```images``` contém as imagens deste README;
 - A pasta ```infra``` contém os arquivos de infraestrutura;
-- O arquivo ```pom.xml``` contém as dependências da aplicação;
+- O arquivo ```pom.xml``` define as dependências da aplicação;
 - A pasta ```src``` contém todo o código fonte da aplicação;
-- A pasta ```target``` contém as saídas geradas pela aplicação.
+- A pasta ```target``` contém os arquivos gerados após a compilação da aplicação.
 
-A aplicação contém 3 contâineres:
-- database: para o banco de dados; seu Dockerfile está em ```src/main/java/br/ufscar/dc/dsw/dao/```;
-- app: para o backend e o frontend; seu Dockerfile está em ```src/main/java/br/ufscar/dc/dsw/```;
-- adminer: para a administração do banco de dados via UI; seu Dockerfile está em ```infra/adminer/```.
+A aplicação é composta por três contêineres:
+- database: responsável pelo banco de dados; seu Dockerfile está localizado em ```src/main/java/br/ufscar/dc/dsw/dao/```;
+- app: responsável pelo backend e frontend; seu Dockerfile está em ```src/main/java/br/ufscar/dc/dsw/```;
+- adminer: fornece uma interface gráfica para administração do banco de dados; seu Dockerfile está em ```infra/adminer/```.
 
 ## Funcionalidades
 
@@ -70,7 +70,8 @@ A aplicação contém 3 contâineres:
 ## Outras informações:
   - A equipe foi composta por 1 integrante: Giovanna Victória Rossetto, RA 791648;
   - O banco de dados está populado com 2 administradores, 10 pacientes e 30 médicos;
-  - Os logins e senhas dos usuários pré-cadastrados estão no arquivo "ClinicaApplication.java" no caminho "/src/main/java/br/ufscar/dc/dsw/ClinicaApplication.java".
+  - Os logins e senhas dos usuários pré-cadastrados estão no arquivo "ClinicaApplication.java" no caminho "/src/main/java/br/ufscar/dc/dsw/ClinicaApplication.java";
+  - Caso a aplicação seja modificada, é necessário fazer a compilação novamente com o comando ```mvn clean package``` e o novo arquivo Clinica-0.0.1-SNAPSHOT.jar, gerado na pasta ```target```, deve substituir o antigo na pasta ```src/main/java/br/ufscar/dc/dsw/```.
 
 ###### Autor: Giovanna Victória Rossetto
 ###### Data de criação: 17/05/2025 - 17 de maio de 2025
