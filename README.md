@@ -13,6 +13,7 @@ Essa aplicação foi desenvolvida para a disciplina de Desenvolvimento de Softwa
 ```
 .
 ├── docker-compose.yml
+├── images
 ├── infra
 ├── pom.xml
 ├── src
@@ -20,6 +21,7 @@ Essa aplicação foi desenvolvida para a disciplina de Desenvolvimento de Softwa
 ```
 
 - O arquivo ```docker-compose.yml``` contém a orquestração dos contâineres da aplicação;
+- A pasta ```images``` contém as imagens desse README;
 - A pasta ```infra``` contém os arquivos de infraestrutura;
 - O arquivo ```pom.xml``` contém as dependências da aplicação;
 - A pasta ```src``` contém todo o código fonte da aplicação;
