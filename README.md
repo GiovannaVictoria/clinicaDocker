@@ -34,9 +34,15 @@ Essa aplicação foi desenvolvida para a disciplina de Desenvolvimento de Softwa
 - A pasta ```target``` contém os arquivos gerados após a compilação da aplicação.
 
 A aplicação é composta por três contêineres:
-- database: responsável pelo banco de dados; seu Dockerfile está localizado em ```src/main/java/br/ufscar/dc/dsw/dao/```;
-- app: responsável pelo backend e frontend; seu Dockerfile está em ```src/main/java/br/ufscar/dc/dsw/```;
-- redis: responsável pelo sistema de cache que armazena dados temporários e frequentemente acessados do banco de dados para um melhor desempenho; seu Dockerfile está em ```infra/adminer/```.
+- database:
+  - responsável pelo banco de dados, portanto é de suma importância para a persistência dos dados da aplicação;
+  - seu Dockerfile está localizado em ```src/main/java/br/ufscar/dc/dsw/dao/```;
+- app:
+  - responsável pelo backend e frontend, portanto é de suma importância para a utilização da aplicação por parte do usuário;
+  - seu Dockerfile está em ```src/main/java/br/ufscar/dc/dsw/```;
+- redis:
+  - responsável pelo sistema de cache que reduz o número de acessos ao banco de dados, uma vez que armazena dados temporários e frequentemente acessados; portanto, é de suma importância para otimizar o desempenho da aplicação; 
+  - seu Dockerfile está em ```redis/```.
 
 ## Funcionalidades
 
