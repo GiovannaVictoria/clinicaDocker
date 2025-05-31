@@ -9,7 +9,7 @@ services:
       retries: 5
       start_period: 30s
   redis:
-    image: redis:7
+    build: ./redis
     container_name: redis
     networks:
       - clinica
