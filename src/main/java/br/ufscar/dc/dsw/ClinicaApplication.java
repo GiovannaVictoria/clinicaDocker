@@ -3,6 +3,7 @@ package br.ufscar.dc.dsw;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
@@ -16,6 +17,7 @@ import br.ufscar.dc.dsw.domain.Medico;
 import br.ufscar.dc.dsw.domain.Paciente;
 import br.ufscar.dc.dsw.domain.Usuario;
 
+@EnableCaching
 @SpringBootApplication
 public class ClinicaApplication {
 

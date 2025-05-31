@@ -17,6 +17,12 @@ services:
     depends_on:
       database:
         condition: service_healthy
+  redis:
+    image: redis:7
+    container_name: redis
+    networks:
+      - clinica
+    restart: always
   app:
     build: ./src/main/java/br/ufscar/dc/dsw/
     networks:
@@ -26,6 +32,8 @@ services:
     depends_on:
       database:
         condition: service_healthy
+      redis:
+        condition: service_started
 
 networks:
   clinica:
