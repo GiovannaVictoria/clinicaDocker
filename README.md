@@ -13,24 +13,30 @@ Essa aplicação foi desenvolvida para a disciplina de Desenvolvimento de Softwa
 ```
 .
 ├── docker-compose.yml
+├── .git
+├── .gitignore
 ├── images
-├── infra
 ├── pom.xml
+├── README.md
+├── redis
 ├── src
-└── target
+├── target
+
 ```
 
 - O arquivo ```docker-compose.yml``` contém a orquestração dos contâineres da aplicação;
+- Os arquivos ```.git``` e ```.gitignore``` contém configurações do GitHub;
 - A pasta ```images``` contém as imagens deste README;
-- A pasta ```infra``` contém os arquivos de infraestrutura;
 - O arquivo ```pom.xml``` define as dependências da aplicação;
+- O arquivo ```README.md``` é este arquivo de ajuda;
+- A pasta ```redis``` contém os arquivos relacionados ao container Redis;
 - A pasta ```src``` contém todo o código fonte da aplicação;
 - A pasta ```target``` contém os arquivos gerados após a compilação da aplicação.
 
 A aplicação é composta por três contêineres:
 - database: responsável pelo banco de dados; seu Dockerfile está localizado em ```src/main/java/br/ufscar/dc/dsw/dao/```;
 - app: responsável pelo backend e frontend; seu Dockerfile está em ```src/main/java/br/ufscar/dc/dsw/```;
-- adminer: fornece uma interface gráfica para administração do banco de dados; seu Dockerfile está em ```infra/adminer/```.
+- redis: responsável pelo sistema de cache que armazena dados temporários e frequentemente acessados do banco de dados para um melhor desempenho; seu Dockerfile está em ```infra/adminer/```.
 
 ## Funcionalidades
 
@@ -65,14 +71,14 @@ A aplicação é composta por três contêineres:
 ## Informações para execução local:
   - É necessário ter instalado o Docker (e o docker compose);
   - Primeiro, é necessário executar o comando ```docker compose up --build``` na pasta raiz da aplicação;
-  - Depois, a aplicação estará disponível na url "localhost:8080" e o banco de dados pode ser administrado via UI na url localhost:8081.
+  - Depois, a aplicação estará disponível na url "localhost:8080".
 
 ## Outras informações:
   - A equipe foi composta por 1 integrante: Giovanna Victória Rossetto, RA 791648;
   - O banco de dados está populado com 2 administradores, 10 pacientes e 30 médicos;
   - Os logins e senhas dos usuários pré-cadastrados estão no arquivo "ClinicaApplication.java" no caminho "/src/main/java/br/ufscar/dc/dsw/ClinicaApplication.java";
-  - Caso a aplicação seja modificada, é necessário fazer a compilação novamente com o comando ```mvn clean package``` e o novo arquivo Clinica-0.0.1-SNAPSHOT.jar, gerado na pasta ```target```, deve substituir o antigo na pasta ```src/main/java/br/ufscar/dc/dsw/```.
+  - Caso a aplicação seja modificada, é necessário fazer a compilação novamente com o comando ```mvn clean package -DskipTests``` e o novo arquivo Clinica-0.0.1-SNAPSHOT.jar, gerado na pasta ```target```, deve substituir o antigo na pasta ```src/main/java/br/ufscar/dc/dsw/```.
 
 ###### Autor: Giovanna Victória Rossetto
 ###### Data de criação: 17/05/2025 - 17 de maio de 2025
-###### Última modificação: 17/05/2025 - 17 de maio de 2025
+###### Última modificação: 30/05/2025 - 30 de maio de 2025
