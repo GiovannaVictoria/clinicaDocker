@@ -8,15 +8,6 @@ services:
       interval: 3s
       retries: 5
       start_period: 30s
-  adminer:
-    build: ./infra/adminer/
-    networks:
-      - clinica
-    ports:
-      - "8081:8080"
-    depends_on:
-      database:
-        condition: service_healthy
   redis:
     image: redis:7
     container_name: redis
