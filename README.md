@@ -24,7 +24,7 @@ Essa aplicação foi desenvolvida para a disciplina de Desenvolvimento de Softwa
 
 ```
 
-- O arquivo ```docker-compose.yml``` contém a orquestração dos contâineres da aplicação;
+- O arquivo ```docker-compose.yml``` contém a orquestração dos contêineres da aplicação;
 - Os arquivos ```.git``` e ```.gitignore``` contém configurações do GitHub;
 - A pasta ```images``` contém as imagens deste README;
 - O arquivo ```pom.xml``` define as dependências da aplicação;
