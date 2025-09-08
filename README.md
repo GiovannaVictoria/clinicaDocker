@@ -106,6 +106,7 @@ This application was developed for the *Web Software Development 1 (DSW1)* cours
 
 ## File structure
 
+```
 .
 ├── docker-compose.yml
 ├── .git
@@ -116,6 +117,7 @@ This application was developed for the *Web Software Development 1 (DSW1)* cours
 ├── redis
 ├── src
 ├── target
+```
 
 - The file ```docker-compose.yml``` contains the orchestration of the application's containers;
 - The ```.git``` and ```.gitignore``` files contain GitHub configuration;
