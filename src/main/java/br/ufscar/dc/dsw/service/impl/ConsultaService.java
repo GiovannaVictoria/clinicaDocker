@@ -46,6 +46,46 @@ public class ConsultaService implements IConsultaService {
 		dao.save(consulta);
 	}
 
+	public void doingSomething1(Consulta consulta1, Consulta consulta2) {
+		System.out.println("doing something");
+	}
+
+	public void doingSomething2(Consulta consulta1, Consulta consulta2) {
+		System.out.println("doing something");
+	}
+
+	public void doingSomething3(Consulta consulta1, Consulta consulta2) {
+		System.out.println("doing something");
+	}
+
+	public void doingSomething4(Consulta consulta1, Consulta consulta2) {
+		System.out.println("doing something");
+	}
+
+	public void doingSomething5(Consulta consulta1, Consulta consulta2) {
+		System.out.println("doing something");
+	}
+
+	public void doingSomething6(Consulta consulta1, Consulta consulta2) {
+		System.out.println("doing something");
+	}
+
+	public void doingSomething7(Consulta consulta1, Consulta consulta2) {
+		System.out.println("doing something");
+	}
+
+	public void doingSomething8(Consulta consulta1, Consulta consulta2) {
+		System.out.println("doing something");
+	}
+
+	public void doingSomething9(Consulta consulta1, Consulta consulta2) {
+		System.out.println("doing something");
+	}
+
+	public void doingSomething10(Consulta consulta1, Consulta consulta2) {
+		System.out.println("doing something");
+	}
+
 	@Transactional(readOnly = true)
 	@Cacheable("consultas")
 	public List<Consulta> buscarTodos() {
