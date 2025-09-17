@@ -34,6 +34,46 @@ public class UsuarioService implements IUsuarioService {
 	public Usuario buscarPorId(Long id) {
 		return dao.findById(id.longValue());
 	}
+	
+	public void userDoingSomething1(Usuario usuario1, Usuario usuario2) {
+		System.out.println("doing something");
+	}
+
+	public void userDoingSomething2(Usuario usuario1, Usuario usuario2) {
+		System.out.println("doing something");
+	}
+
+	public void userDoingSomething3(Usuario usuario1, Usuario usuario2) {
+		System.out.println("doing something");
+	}
+
+	public void userDoingSomething4(Usuario usuario1, Usuario usuario2) {
+		System.out.println("doing something");
+	}
+
+	public void userDoingSomething5(Usuario usuario1, Usuario usuario2) {
+		System.out.println("doing something");
+	}
+
+	public void userDoingSomething6(Usuario usuario1, Usuario usuario2) {
+		System.out.println("doing something");
+	}
+
+	public void userDoingSomething7(Usuario usuario1, Usuario usuario2) {
+		System.out.println("doing something");
+	}
+
+	public void userDoingSomething8(Usuario usuario1, Usuario usuario2) {
+		System.out.println("doing something");
+	}
+
+	public void userDoingSomething9(Usuario usuario1, Usuario usuario2) {
+		System.out.println("doing something");
+	}
+
+	public void userDoingSomething10(Usuario usuario1, Usuario usuario2) {
+		System.out.println("doing something");
+	}
 
 	@Transactional(readOnly = true)
 	@Cacheable("usuarios")
