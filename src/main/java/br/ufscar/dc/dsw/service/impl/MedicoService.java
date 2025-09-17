@@ -47,6 +47,46 @@ public class MedicoService implements IMedicoService {
 		return dao.findByEspecialidade(especialidade);
 	}
 
+	public void doctorDoingSomething1(Usuario usuario1, Usuario usuario2) {
+		System.out.println("doing something");
+	}
+
+	public void doctorDoingSomething2(Usuario usuario1, Usuario usuario2) {
+		System.out.println("doing something");
+	}
+
+	public void doctorDoingSomething3(Usuario usuario1, Usuario usuario2) {
+		System.out.println("doing something");
+	}
+
+	public void doctorDoingSomething4(Usuario usuario1, Usuario usuario2) {
+		System.out.println("doing something");
+	}
+
+	public void doctorDoingSomething5(Usuario usuario1, Usuario usuario2) {
+		System.out.println("doing something");
+	}
+
+	public void doctorDoingSomething6(Usuario usuario1, Usuario usuario2) {
+		System.out.println("doing something");
+	}
+
+	public void doctorDoingSomething7(Usuario usuario1, Usuario usuario2) {
+		System.out.println("doing something");
+	}
+
+	public void doctorDoingSomething8(Usuario usuario1, Usuario usuario2) {
+		System.out.println("doing something");
+	}
+
+	public void doctorDoingSomething9(Usuario usuario1, Usuario usuario2) {
+		System.out.println("doing something");
+	}
+
+	public void doctorDoingSomething10(Usuario usuario1, Usuario usuario2) {
+		System.out.println("doing something");
+	}
+
 	@Transactional(readOnly = true)
 	@Cacheable("medicos")
 	public List<Medico> buscarTodos() {
