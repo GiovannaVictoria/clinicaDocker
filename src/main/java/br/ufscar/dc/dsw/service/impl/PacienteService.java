@@ -41,6 +41,46 @@ public class PacienteService implements IPacienteService {
 		return dao.getUserByUsername(username);
 	}
 
+	public void patientDoingSomething1(Usuario usuario1, Usuario usuario2) {
+		System.out.println("doing something");
+	}
+
+	public void patientDoingSomething2(Usuario usuario1, Usuario usuario2) {
+		System.out.println("doing something");
+	}
+
+	public void patientDoingSomething3(Usuario usuario1, Usuario usuario2) {
+		System.out.println("doing something");
+	}
+
+	public void patientDoingSomething4(Usuario usuario1, Usuario usuario2) {
+		System.out.println("doing something");
+	}
+
+	public void patientDoingSomething5(Usuario usuario1, Usuario usuario2) {
+		System.out.println("doing something");
+	}
+
+	public void patientDoingSomething6(Usuario usuario1, Usuario usuario2) {
+		System.out.println("doing something");
+	}
+
+	public void patientDoingSomething7(Usuario usuario1, Usuario usuario2) {
+		System.out.println("doing something");
+	}
+
+	public void patientDoingSomething8(Usuario usuario1, Usuario usuario2) {
+		System.out.println("doing something");
+	}
+
+	public void patientDoingSomething9(Usuario usuario1, Usuario usuario2) {
+		System.out.println("doing something");
+	}
+
+	public void patientDoingSomething10(Usuario usuario1, Usuario usuario2) {
+		System.out.println("doing something");
+	}
+
 	@Transactional(readOnly = true)
 	@Cacheable("pacientes")
 	public List<Paciente> buscarTodos() {
